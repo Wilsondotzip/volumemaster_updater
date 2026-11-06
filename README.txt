@@ -72,4 +72,4 @@ The update was interrupted, or the device stopped working afterwards
 LICENCE
 -------
 This tool includes STM32CubeProgrammer by STMicroelectronics. See
-STM32CubeProgrammer-license.txt for its licence terms.
+STM32CubeProgrammer-license.txt included in distribution for its licence terms.
