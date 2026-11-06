@@ -1,0 +1,18 @@
+# Python dependencies for the firmware updater (updater.py). Install with:
+#   pip install -r requirements.txt
+#
+# Needs vendor/stm32programmer (not in git): STM32_Programmer_CLI.exe with its DLLs
+# in bin/, plus Data_Base/ and license.txt, copied from an STM32CubeProgrammer install.
+#
+# Also needs firmware/ (not in git), holding exactly one firmware .bin to install.
+#
+# Build VolumeMaster-Updater.exe from this folder:
+#   python -m PyInstaller --onefile --noconsole --name VolumeMaster-Updater --add-data "vendor;vendor" --add-data "firmware;firmware" updater.py --distpath .
+#
+# ST's SLA0048 licence requires its notice with binary redistributions, so ship
+# vendor/stm32programmer/license.txt alongside the exe.
+
+pyserial==3.5
+
+# Build tool
+pyinstaller==6.13.0

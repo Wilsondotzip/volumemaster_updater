@@ -1,0 +1,19 @@
+# Firmware images and the STM32 programmer aren't kept in git
+firmware/
+vendor/
+
+# PyInstaller output
+build/
+release/
+*.spec
+*.exe
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# OS junk
+Thumbs.db
+desktop.ini
